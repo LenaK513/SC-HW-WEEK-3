@@ -1,0 +1,170 @@
+:root {
+  --primary-text-color: rgb(0, 0, 0);
+  --secondary-text-color: rgb(0, 0, 0, 0.5);
+  --text-information-color: rgb(0, 0, 0, 0.8);
+  --button-text-color: rgb(33, 33, 33);
+  --button-background-first: rgb(232, 100, 6);
+  --button-background-second: rgb(251, 246, 246);
+  --link-color: blue;
+  --email-link-color: rgb(45, 1, 116);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0 20px;
+
+  @media screen and (min-width: 500px) {
+    background-color: red;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+h1,
+h2 {
+  color: var(--primary-text-color);
+}
+
+h2 {
+  font-size: 44px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  @media screen and(max-width:768px) {
+    font-size: 20 px;
+  }
+}
+/* @media only screen and(max-width:768px) {
+  h1 {
+    font-size: 20 px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+} */
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: var(--button-text-color);
+  text-decoration: none;
+}
+
+.contact,
+.about {
+  padding: 20px 10px;
+  margin: 0 15px 0 15px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.contact:hover,
+.contact:focus,
+.about:hover,
+.about:focus {
+  color: var(--button-text-color);
+}
+
+.contact {
+  background-color: var(--button-background-first);
+  border: transparent;
+
+  box-shadow: 5px 5px 5px -5px var(--secondary-text-color);
+}
+
+.about {
+  border: 1px solid var(--button-background-first);
+  background-color: var(--button-background-second);
+}
+
+.about-link {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+/* .description {
+  display: flex;
+  justify-content: center;
+} */
+
+.description__text {
+  font-size: 14px;
+  /* margin: 10px;
+  padding: 10px;
+  max-width: 220px; */
+
+  color: var(--text-information-color);
+}
+
+.mail {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--email-link-color);
+}
+
+.col-sm {
+  margin-bottom: 15px;
+}
+img {
+  width: 100%;
+  height: auto;
+  background-color: rgb(248, 248, 248);
+  padding: 30px;
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.yoga-text {
+  margin-bottom: 10px;
+}
+.contact-yoga {
+  margin: 0;
+}
+
+/* .img-fluid {
+  background-color: rgb(248, 248, 248);
+  padding: 30px;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+} */
+
+.about-section {
+  max-width: 329px;
+  max-height: 254px;
+  box-shadow: 5px 3px 3px -5px var(--secondary-text-color);
+}
+
+.col-sm-4:not(:last-child) {
+  margin-bottom: 10px;
+}
