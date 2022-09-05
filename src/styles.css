@@ -12,10 +12,6 @@
 body {
   font-family: "Roboto", sans-serif;
   padding: 0 20px;
-
-  @media screen and (min-width: 500px) {
-    background-color: red;
-  }
 }
 
 .container {
@@ -38,18 +34,7 @@ h2 {
 h1 {
   font-size: 64px;
   margin: 0;
-  @media screen and(max-width:768px) {
-    font-size: 20 px;
-  }
 }
-/* @media only screen and(max-width:768px) {
-  h1 {
-    font-size: 20 px;
-  }
-  h2 {
-    font-size: 14px;
-  }
-} */
 
 p {
   font-size: 18px;
@@ -167,4 +152,17 @@ img {
 
 .col-sm-4:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  img {
+    display: none;
+  }
 }
